@@ -42,6 +42,21 @@ nav a.menu-item {
   margin: 0px 10px;
   color: #fff;
   font-size: 12px;
+  position: relative;
+}
+nav a.menu-item:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #5357d1;
+  position: absolute;
+  display: block;
+  left: 0px;
+  margin-top: 5px;
+  transition: width 0.5s;
+}
+nav a.menu-item:hover:after {
+  width: 100%;
 }
 .header-btn-mutual {
   padding: 10px;
@@ -50,6 +65,12 @@ nav a.menu-item {
   margin: 0px 10px;
   border-radius: 5px;
   font-size: 12px;
+}
+.header-btn-mutual:hover {
+  background: #fff;
+}
+.header-btn-mutual:hover a {
+  color: #000;
 }
 .header-btn-exchange select {
   padding: 10px;
@@ -93,6 +114,9 @@ p.head {
 }
 p.sub-head {
   font-size: 14px;
+}
+.banner-content p.sub-head {
+  margin: 20px 0px;
 }
 p.invest-btn {
   margin-top: 25px;
@@ -144,12 +168,16 @@ li.slick-active {
 }
 .news-card {
   width: 20%;
-  padding: 25px 0px 25px 35px;
+  padding: 25px 0px 25px 40px;
   border-right: 1px solid #0000001c;
   transition: transform 0.5s;
   border-radius: 5px;
+  position: relative;
 }
-
+span.right-arrow {
+  margin-left: 15px;
+  color: #e41c3b;
+}
 .news-card:last-child {
   border-right: 0px;
 }
@@ -159,6 +187,49 @@ li.slick-active {
   color: #fff;
   background-image: linear-gradient(135deg, #91ebcd, #515dd9);
   border: 0px;
+}
+.news-card:hover span.right-arrow {
+  color: #fff;
+}
+.news-card:before {
+  position: absolute;
+  left: 10px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 3px;
+}
+.news-card.circular:before {
+  background-image: url(/images/circular.png);
+}
+.news-card.market-watch:before {
+  background-image: url(/images/market-watch.png);
+}
+.news-card.bhav-copy:before {
+  background-image: url(/images/bhav-copy.png);
+}
+.news-card.active-contracts:before {
+  background-image: url(/images/active-contracts.png);
+}
+.news-card.top-gainers:before {
+  background-image: url(/images/top-gainers.png);
+}
+.news-card.circular:hover:before {
+  background-image: url(/images/circular-white.png);
+}
+.news-card.market-watch:hover:before {
+  background-image: url(/images/market-watch-white.png);
+}
+.news-card.bhav-copy:hover:before {
+  background-image: url(/images/bhav-copy-white.png);
+}
+.news-card.active-contracts:hover:before {
+  background-image: url(/images/active-contracts-white.png);
+}
+.news-card.top-gainers:hover:before {
+  background-image: url(/images/top-gainers-white.png);
 }
 p.card-head {
   font-size: 19px;
@@ -195,12 +266,16 @@ p.card-view-more {
 .trade-card .left-content {
   width: 40%;
   padding: 30px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 .trade-card h2.main-head {
   font-size: 30px;
   color: #5357d1;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .trade-card p.sub-head {
   margin-bottom: 20px;
@@ -211,11 +286,49 @@ p.membership-type {
   color: #575757;
   margin-bottom: 20px;
 }
+.trade-card ul {
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+.trade-card ul li {
+  list-style: "★";
+  padding: 10px 0px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.trade-card ul li.active {
+  color: #e41c3b;
+}
+.trade-card ul li:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background: #eee;
+  margin-top: -10px;
+}
+.trade-card ul li:first-child:before {
+  display: none;
+}
+p.become-member a {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #e81c3c;
+  border: 2px solid #e81c3c;
+  border-radius: 5px;
+}
+p.become-member a:hover {
+  background-color: #e81c3c;
+  color: #fff;
+}
 .trade-card .right-content {
   width: 60%;
 }
-
 .right-content img {
+  height: 100%;
   width: 100%;
 }
 .right-content div {
@@ -223,6 +336,7 @@ p.membership-type {
 }
 .right-content .active {
   display: block;
+  height: 100%;
 }
 footer {
   background: #242323;
@@ -242,6 +356,7 @@ footer {
 }
 .footer-logo {
   margin-bottom: 30px;
+  filter: grayscale(1);
 }
 h3.footer-head {
   font-weight: bold;
