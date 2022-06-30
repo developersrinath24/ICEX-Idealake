@@ -182,6 +182,48 @@ p.card-view-more {
   color: #fff;
 }
 
+.trade-icex {
+  padding: 40px 0px;
+  margin: 40px 0px;
+}
+.trade-card {
+  border: 0.5px solid #0000001c;
+  border-radius: 5px;
+  box-shadow: 0em 0 0.4em #0000001c;
+  display: flex;
+}
+.trade-card .left-content {
+  width: 40%;
+  padding: 30px;
+}
+
+.trade-card h2.main-head {
+  font-size: 30px;
+  color: #5357d1;
+  font-weight: bold;
+}
+.trade-card p.sub-head {
+  margin-bottom: 20px;
+}
+p.membership-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #575757;
+  margin-bottom: 20px;
+}
+.trade-card .right-content {
+  width: 60%;
+}
+
+.right-content img {
+  width: 100%;
+}
+.right-content div {
+  display: none;
+}
+.right-content .active {
+  display: block;
+}
 footer {
   background: #242323;
   color: #fff;
@@ -219,6 +261,14 @@ h3.footer-head {
 .footer-registered-office {
   width: 20%;
 }
+.footer-registered-office ul {
+  margin-bottom: 50px;
+}
+.social-links img {
+  width: 23px;
+  margin-right: 5px;
+}
+
 .footer-links {
   width: 15%;
 }
