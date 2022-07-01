@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICEX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     
   </head>
   <body>
@@ -174,7 +175,7 @@
             <div class="item-text">chat</div>
           </a>
         </div>
-          <div class="list-item"><a href="#">
+          <div class="list-item"><a href="#call-modal" rel="modal:open">
             <div class="item-image">
               <img src="./images/charm-call.png"/>
             </div>
@@ -192,6 +193,19 @@
             </div>
             <div class="item-text">enquire</br>now</div>
           </a></div>
+        </div>
+      </div>
+      <div id="call-modal" class="modal">
+        <div class="call-popup">
+          <a class="popup-close" href="#" rel="modal:close"><img src='./images/close-modal.png'></a>
+          <h2>Call Me</h2>
+          <p>Lorem Ipsum is simply dummy text of the</br> printing and typesetting industry.</p>
+          <form action="#" type="post">
+            <div class="form-field"><img src='./images/user.png' class="form-img" /><input type="text" placeholder="Name" value="" /></div>
+            <div class="form-field"><img src='./images/form-mail.png' class="form-img" /><input type="email" placeholder="Email" value="" /></div>
+            <div class="form-field"><img src='./images/smart-phone.png' class="form-img" /><input type="phone" placeholder="Mobile" value="" /></div>
+            <div class="form-field"><input type="submit" value="Submit" /></div>
+          </form>
         </div>
       </div>
     </main>
@@ -279,6 +293,7 @@
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

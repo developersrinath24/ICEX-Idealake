@@ -356,6 +356,7 @@ footer {
 }
 .main-footer ul li a {
   font-size: 14px;
+  color: #bebec0;
 }
 .main-footer li a:hover {
   color: #e81c3c;
@@ -405,7 +406,16 @@ h3.footer-head {
   border-top: 1px solid rgb(255 255 255 / 30%);
   color: #fefefe;
 }
-
+.sub-footer-left{
+  color: #bebec0;
+}
+.sub-footer-middle{
+  color: #bebec0;
+}
+.sub-footer-right img {
+  margin-bottom: -3px;
+  margin-left: 10px;
+}
 .charmbar {
   position: fixed;
   right: -70px;
@@ -448,6 +458,63 @@ h3.footer-head {
 }
 .charm-btn img {
   vertical-align: middle;
+}
+.call-popup {
+  text-align: center;
+}
+.call-popup h2 {
+  margin-bottom: 20px;
+}
+.call-popup p {
+  margin-bottom: 20px;
+}
+.call-popup .form-field {
+  margin: 20px 0px;
+}
+.call-popup form {
+  margin-top: 40px;
+}
+img.form-img {
+  margin-bottom: -5px;
+  margin-right: -30px;
+  position: relative;
+}
+.form-field input {
+  border: 0px;
+  background: #eee;
+  padding: 15px 15px 15px 35px;
+  width: 250px;
+}
+.form-field input[type=submit]{
+  background-color: #e9354f;
+  width: 60px;
+  text-align: center;
+}
+.form-field input[type=submit] {
+  background-color: #e9354f;
+  width: 110px;
+  text-align: center;
+  padding: 10px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+div#call-modal {
+  padding-top: 40px;
+}
+div#call-modal a.close-modal {
+  display: none;
+}
+a.popup-close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+img.form-img {
+  margin-bottom: -5px;
+  margin-right: -25px;
+  position: relative;
 }
 @media (max-width: 600px) {
   html,
