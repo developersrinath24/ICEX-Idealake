@@ -22,6 +22,9 @@ body {
 .app__container {
   padding: 0 10%;
 }
+.mobile-only{
+  display: none;
+}
 header {
   position: fixed;
   z-index: 9999;
@@ -401,4 +404,112 @@ h3.footer-head {
   padding: 20px 0px;
   border-top: 1px solid rgb(255 255 255 / 30%);
   color: #fefefe;
+}
+
+
+@media(max-width:600px){
+  .mobile-only{
+    display: block;
+  }
+  .desktop-only{
+    display: none;
+  }
+  .app__container {
+    padding: 0 20px;
+}
+
+.nav-sidebar {
+  width: 70%;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  background: #fff;
+  top: 0;
+  padding: 20px 0px 0px 20px;
+}
+.nav-sidebar a {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  color: #000;
+}
+.header-btn-mutual{
+  margin: 0px;
+  padding: 0px;
+}
+.nav-sidebar .header-btn-mutual a {
+  border: 1px solid #000;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.news-cards {
+  overflow: scroll;
+}
+
+.trade-card {
+  flex-direction: column;
+}
+.trade-card .left-content{
+  width: 100%;
+  order: 2;
+  padding: 20px 20px 40px 20px;
+  box-sizing: border-box;
+}
+.trade-card .right-content{
+  width: 100%;
+  order: 1;
+}
+.main-footer {
+  display: block;
+}
+.footer-about {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.footer-corporate-office {
+  width: 100%;
+}
+.footer-registered-office {
+  width: 100%;
+}
+.footer-registered-office ul {
+  margin-bottom: 0px;
+}
+.footer-links {
+  width: 100%;
+}
+h3.footer-head {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  position: relative;
+}
+.footer-about h3.footer-head{
+  border: 0px;
+}
+.footer-about h3.footer-head:after {
+  content: "";
+}
+.footer-content {
+  display: none;
+}
+.main-footer div h3:after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+.main-footer div h3.active:after{
+  content: "-";
+}
+.sub-footer {
+  display: block;
+  border-top: 0px;
+}
+.sub-footer div{
+  margin-bottom: 10px;
+}
 }

@@ -18,6 +18,12 @@ $(document).ready(function () {
     $(this).addClass("active");
     $("#" + $(this).attr("data-id")).addClass("active");
   });
+  $('h3.footer-head').click(function(){
+    $('h3.footer-head').removeClass("active");
+    $(this).addClass("active");
+    $('.footer-content').slideUp();
+    $(this).parent().find('.footer-content').slideDown();
+});
 
   $(".hero-slider").slick({
     dots: true,
